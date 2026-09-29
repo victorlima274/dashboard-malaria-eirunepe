@@ -31,43 +31,46 @@ if (!dir.exists(pasta_graficos)) {
 
 graficos <- list(
   list(id="01", arquivo="01_LPI_mensal.png", titulo="Casos positivos de malária por mês – LPI"),
-list(id="01b", arquivo="01_LPI_mensal_2_anos.png", titulo="Casos positivos de malária por mês – LPI — 2 anos"),
-list(id="02", arquivo="02_serie_historica_casos.png", titulo="Série histórica do total de casos de malária"),
-list(id="03", arquivo="03_falciparum_mensal.png", titulo="P. falciparum – comparação mensal"),
-list(id="05", arquivo="05_oportunidade_tratamento.png", titulo="Intervalo entre início dos sintomas e tratamento"),
-list(id="06", arquivo="06_oportunidade_historica.png", titulo="Série histórica da oportunidade de tratamento"),
-list(id="07", arquivo="07_LVC_mensal.png", titulo="Quantidade de exames de LVC realizados, mês a mês"),
-list(id="08", arquivo="08_gestantes_historico.png", titulo="Quantidade de exames de malária realizados em gestantes"),
-list(id="09", arquivo="09_gestantes_especie_pie.png", titulo="Proporção da espécie de malária em gestantes positivas"),
-list(id="10", arquivo="10_gestantes_unidade.png", titulo="Exames para malária em gestantes por unidade notificante"),
-list(id="11", arquivo="11_tafenoquina.png", titulo="P. vivax/mistas, uso de tafenoquina e proporção tratada"),
-list(id="12", arquivo="12_recaida.png", titulo="Casos de P. vivax/mistas e recaídas"),
-list(id="13", arquivo="13_top10_localidades.png", titulo="As 10 localidades com mais casos"),
-list(id="14", arquivo="14_faixa_etaria_historica.png", titulo="Série histórica da proporção por faixa etária"),
-list(id="15", arquivo="15_exames_positividade_historica.png", titulo="Série histórica da quantidade de exames e positivos"),
-list(id="16", arquivo="16_falciparum_vivax.png", titulo="Distribuição mensal de P. falciparum x P. vivax/mistas"),
-list(id="16b", arquivo="16_falciparum_vivax_linhas.png", titulo="P. falciparum x P. vivax/mistas – série mensal"),
-list(id="17", arquivo="17_areas_especiais_doughnut.png", titulo="Proporção dos casos de malária por tipo de área"),
-list(id="18", arquivo="18_autoctone_importado.png", titulo="Casos importados por mês"),
-list(id="19", arquivo="19_sexo.png", titulo="Perfil dos casos por sexo"),
-list(id="20", arquivo="20_raca_cor.png", titulo="Perfil dos casos por raça/cor"),
-list(id="21", arquivo="21_escolaridade.png", titulo="Perfil dos casos por escolaridade"),
-list(id="22", arquivo="22_ocupacao.png", titulo="Principais ocupações entre os casos"),
-list(id="23", arquivo="23_semana_epidemiologica.png", titulo="Distribuição dos casos por semana epidemiológica"),
-list(id="24", arquivo="24_ranking_nacional_top10.png", titulo="Ranking nacional – Top 10 municípios por casos"),
-list(id="25", arquivo="25_ranking_nacional_top20.png", titulo="Ranking nacional – Top 20 municípios por casos"),
-list(id="26", arquivo="26_ranking_nacional_top50.png", titulo="Ranking nacional – Top 50 municípios por casos"),
-list(id="27", arquivo="27_tempo_sintomas_tratamento_localidade.png", titulo="Oportunidade de tratamento por localidade"),
-list(id="28", arquivo="28_especies_historicas.png", titulo="Proporção das espécies de Plasmodium por ano"),
-list(id="29", arquivo="29_tendencia_temporal.png", titulo="Tendência temporal dos casos"),
-list(id="30", arquivo="30_diagrama_controle_malaria.png", titulo="Diagrama de controle mensal da malária"),
-list(id="31", arquivo="31_diagrama_controle_falciparum.png", titulo="Diagrama de controle mensal – P. falciparum"),
-list(id="32", arquivo="32_diagrama_controle_vivax.png", titulo="Diagrama de controle mensal – P. vivax"),
-list(id="33", arquivo="33_casos_positivos_por_zona.png", titulo="Casos positivos por zona da localidade de infecção"),
-list(id="34", arquivo="34_casos_zona_mensal.png", titulo="Casos positivos por zona – comparação mensal"),
-list(id="35", arquivo="35_casos_importados_mensal.png", titulo="Casos importados de outros municípios – comparação mensal"),
-list(id="36", arquivo="36_laminas_positivas_busca_ativa_passiva.png", titulo="Proporção de lâminas positivas por busca – 2 anos")
+  list(id="01b", arquivo="01_LPI_mensal_2_anos.png", titulo="Casos positivos de malária por mês – LPI — 2 anos"),
+  list(id="02", arquivo="02_serie_historica_casos.png", titulo="Série histórica do total de casos de malária"),
+  list(id="03", arquivo="03_falciparum_mensal.png", titulo="P. falciparum – comparação mensal"),
+  list(id="06", arquivo="06_oportunidade_historica.png", titulo="Série histórica da oportunidade de tratamento"),
+  list(id="07", arquivo="07_LVC_mensal.png", titulo="Quantidade de exames de LVC realizados, mês a mês"),
+  list(id="08", arquivo="08_gestantes_historico.png", titulo="Quantidade de exames de malária realizados em gestantes"),
+  list(id="09", arquivo="09_gestantes_especie_pie.png", titulo="Proporção da espécie de malária em gestantes positivas"),
+  list(id="10", arquivo="10_gestantes_unidade.png", titulo="Exames para malária em gestantes por unidade notificante"),
+  list(id="11", arquivo="11_tafenoquina.png", titulo="P. vivax/mistas, uso de tafenoquina e proporção tratada"),
+  list(id="12", arquivo="12_recaida.png", titulo="Casos de P. vivax/mistas e recaídas"),
+  list(id="13", arquivo="13_top10_localidades.png", titulo="As 10 localidades com mais casos"),
+  list(id="14", arquivo="14_faixa_etaria_historica.png", titulo="Série histórica da proporção por faixa etária"),
+  list(id="15", arquivo="15_exames_positividade_historica.png", titulo="Série histórica da quantidade de exames e positivos"),
+  list(id="16", arquivo="16_falciparum_vivax.png", titulo="Distribuição mensal de P. falciparum x P. vivax/mistas"),
+  list(id="16b", arquivo="16_falciparum_vivax_linhas.png", titulo="P. falciparum x P. vivax/mistas – série mensal"),
+  list(id="18", arquivo="18_autoctone_importado.png", titulo="Casos importados por mês"),
+  list(id="19", arquivo="19_sexo.png", titulo="Perfil dos casos por sexo"),
+  list(id="20", arquivo="20_raca_cor.png", titulo="Perfil dos casos por raça/cor"),
+  list(id="21", arquivo="21_escolaridade.png", titulo="Perfil dos casos por escolaridade"),
+  list(id="22", arquivo="22_ocupacao.png", titulo="Principais ocupações entre os casos"),
+  list(id="23", arquivo="23_semana_epidemiologica.png", titulo="Distribuição dos casos por semana epidemiológica"),
+  list(id="24", arquivo="24_ranking_nacional_top10.png", titulo="Ranking nacional – Top 10 municípios por casos"),
+  list(id="25", arquivo="25_ranking_nacional_top20.png", titulo="Ranking nacional – Top 20 municípios por casos"),
+  list(id="26", arquivo="26_ranking_nacional_top50.png", titulo="Ranking nacional – Top 50 municípios por casos"),
+  list(id="27", arquivo="27_tempo_sintomas_tratamento_localidade.png", titulo="Oportunidade de tratamento por localidade"),
+  list(id="28", arquivo="28_especies_historicas.png", titulo="Proporção das espécies de Plasmodium por ano"),
+  list(id="30", arquivo="30_diagrama_controle_malaria.png", titulo="Diagrama de controle mensal da malária"),
+  list(id="31", arquivo="31_diagrama_controle_falciparum.png", titulo="Diagrama de controle mensal – P. falciparum"),
+  list(id="32", arquivo="32_diagrama_controle_vivax.png", titulo="Diagrama de controle mensal – P. vivax"),
+  list(id="33", arquivo="33_casos_positivos_por_zona.png", titulo="Casos positivos por zona da localidade de infecção"),
+  list(id="34", arquivo="34_casos_zona_mensal.png", titulo="Casos positivos por zona – comparação mensal"),
+  list(id="35", arquivo="35_casos_importados_mensal.png", titulo="Casos importados de outros municípios – comparação mensal"),
+  list(id="36", arquivo="36_laminas_positivas_busca_ativa_passiva.png", titulo="Proporção de lâminas positivas por busca – 2 anos"),
+  list(id="37", arquivo="37_municipios_importadores_especie_mensal.png", titulo="Municípios importadores por mês e espécie")
 )
+
+grafico_por_id <- function(id) {
+  graficos[[which(vapply(graficos, function(g) identical(g$id, id), logical(1)))]]
+}
+
 
 mostrar_grafico <- function(g) {
   caminho <- file.path(pasta_graficos, g$arquivo)
@@ -142,71 +145,70 @@ ui <- fluidPage(
   ),
 
   tabsetPanel(
-    
+
     tabPanel(
       "Casos e diagnóstico",
       br(),
-      mostrar_grafico(graficos[[1]]),
-      mostrar_grafico(graficos[[2]]),
-      mostrar_grafico(graficos[[3]]),
-      mostrar_grafico(graficos[[4]]),
-      mostrar_grafico(graficos[[5]]),
-      mostrar_grafico(graficos[[6]]),
-      mostrar_grafico(graficos[[7]]),
-      mostrar_grafico(graficos[[15]])
+      mostrar_grafico(grafico_por_id("01")),
+      mostrar_grafico(grafico_por_id("01b")),
+      mostrar_grafico(grafico_por_id("02")),
+      mostrar_grafico(grafico_por_id("03")),
+      mostrar_grafico(grafico_por_id("15"))
     ),
 
     tabPanel(
       "Gestantes, LVC e tratamento",
       br(),
-      mostrar_grafico(graficos[[8]]),
-      mostrar_grafico(graficos[[9]]),
-      mostrar_grafico(graficos[[10]]),
-      mostrar_grafico(graficos[[11]]),
-      mostrar_grafico(graficos[[12]])
+      mostrar_grafico(grafico_por_id("06")),
+      mostrar_grafico(grafico_por_id("07")),
+      mostrar_grafico(grafico_por_id("08")),
+      mostrar_grafico(grafico_por_id("09")),
+      mostrar_grafico(grafico_por_id("10")),
+      mostrar_grafico(grafico_por_id("11")),
+      mostrar_grafico(grafico_por_id("12"))
     ),
 
     tabPanel(
       "Perfil epidemiológico",
       br(),
-      mostrar_grafico(graficos[[14]]),
-      mostrar_grafico(graficos[[19]]),
-      mostrar_grafico(graficos[[20]]),
-      mostrar_grafico(graficos[[21]]),
-      mostrar_grafico(graficos[[22]]),
-      mostrar_grafico(graficos[[23]])
+      mostrar_grafico(grafico_por_id("14")),
+      mostrar_grafico(grafico_por_id("19")),
+      mostrar_grafico(grafico_por_id("20")),
+      mostrar_grafico(grafico_por_id("21")),
+      mostrar_grafico(grafico_por_id("22")),
+      mostrar_grafico(grafico_por_id("23"))
     ),
 
     tabPanel(
       "Localidades e rankings",
       br(),
-      mostrar_grafico(graficos[[13]]),
-      mostrar_grafico(graficos[[24]]),
-      mostrar_grafico(graficos[[25]]),
-      mostrar_grafico(graficos[[26]]),
-      mostrar_grafico(graficos[[27]])
+      mostrar_grafico(grafico_por_id("13")),
+      mostrar_grafico(grafico_por_id("24")),
+      mostrar_grafico(grafico_por_id("25")),
+      mostrar_grafico(grafico_por_id("26")),
+      mostrar_grafico(grafico_por_id("27"))
     ),
 
     tabPanel(
       "Espécies e origem",
       br(),
-      mostrar_grafico(graficos[[16]]),
-      mostrar_grafico(graficos[[17]]),
-      mostrar_grafico(graficos[[18]]),
-      mostrar_grafico(graficos[[28]]),
-      mostrar_grafico(graficos[[29]])
+      mostrar_grafico(grafico_por_id("16")),
+      mostrar_grafico(grafico_por_id("16b")),
+      mostrar_grafico(grafico_por_id("18")),
+      mostrar_grafico(grafico_por_id("28")),
+      mostrar_grafico(grafico_por_id("35")),
+      mostrar_grafico(grafico_por_id("37"))
     ),
 
     tabPanel(
       "Controle epidemiológico",
       br(),
-      mostrar_grafico(graficos[[30]]),
-      mostrar_grafico(graficos[[31]]),
-      mostrar_grafico(graficos[[32]]),
-      mostrar_grafico(graficos[[33]]),
-      mostrar_grafico(graficos[[34]]),
-      mostrar_grafico(graficos[[35]]),
-      mostrar_grafico(graficos[[36]])
+      mostrar_grafico(grafico_por_id("30")),
+      mostrar_grafico(grafico_por_id("31")),
+      mostrar_grafico(grafico_por_id("32")),
+      mostrar_grafico(grafico_por_id("33")),
+      mostrar_grafico(grafico_por_id("34")),
+      mostrar_grafico(grafico_por_id("36"))
     ),
 
     tabPanel(
