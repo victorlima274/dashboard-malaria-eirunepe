@@ -1,0 +1,10 @@
+.Rhistory
+.RData
+.RData*
+.Rproj.user/
+NOTI*.csv
+Resultados/
+Dados_Auxiliares/
+Dashboard_Malaria/.RData
+*.zip
+Git-*.exe

@@ -5,57 +5,26 @@ library(shiny)
 # Base visual: main_graficos_v6_LAMINAS_POSITIVAS_ATIVA_PASSIVA.R
 # ============================================================
 
-# Pasta pública do Shiny onde os PNGs serão servidos.
+# ============================================================
+# ARQUIVOS PUBLICADOS
+# ============================================================
+# A versão pública trabalha SOMENTE com os arquivos que estão
+# dentro da própria pasta Dashboard_Malaria.
+#
+# Os gráficos gerados pelo v6 serão sincronizados para:
+# Dashboard_Malaria/www/graficos/
+#
+# Isso é importante porque o Posit Connect publica somente o
+# conteúdo desta pasta e não tem acesso a ../Resultados/Graficos.
 pasta_graficos <- file.path("www", "graficos")
 
-# Pasta onde o v6 realmente grava os gráficos.
-pasta_graficos_v6 <- file.path("..", "Resultados", "Graficos")
-
-# Cria a pasta pública se ela ainda não existir.
+# A pasta www/graficos deve existir no pacote publicado.
 if (!dir.exists(pasta_graficos)) {
-  dir.create(pasta_graficos, recursive = TRUE, showWarnings = FALSE)
-}
-
-# Copia automaticamente os gráficos produzidos pelo v6 para o www.
-# Assim, não é necessário copiar os 37 PNGs manualmente.
-if (dir.exists(pasta_graficos_v6)) {
-
-  arquivos_v6 <- list.files(
-    pasta_graficos_v6,
-    pattern = "\\.png$",
-    full.names = TRUE,
-    ignore.case = TRUE
-  )
-
-  if (length(arquivos_v6) > 0) {
-
-    file.copy(
-      from = arquivos_v6,
-      to = file.path(
-        pasta_graficos,
-        basename(arquivos_v6)
-      ),
-      overwrite = TRUE,
-      copy.date = TRUE
-    )
-
-  } else {
-
-    warning(
-      "A pasta Resultados/Graficos existe, mas nenhum arquivo PNG foi encontrado."
-    )
-  }
-
-} else {
-
-  warning(
+  stop(
     paste0(
-      "A pasta dos gráficos do v6 não foi encontrada: ",
-      normalizePath(
-        pasta_graficos_v6,
-        winslash = "/",
-        mustWork = FALSE
-      )
+      "A pasta pública de gráficos não foi encontrada: ",
+      normalizePath(pasta_graficos, winslash = "/", mustWork = FALSE),
+      "\n\nOs gráficos devem ser sincronizados pelo fluxo local antes do push para o GitHub."
     )
   )
 }
@@ -107,7 +76,11 @@ mostrar_grafico <- function(g) {
       class = "grafico-card",
       h3(g$titulo),
       img(
-        src = file.path("graficos", g$arquivo),
+        src = paste0(
+          file.path("graficos", g$arquivo),
+          "?v=",
+          as.numeric(file.info(caminho)$mtime)
+        ),
         class = "grafico-img"
       )
     )
