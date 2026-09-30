@@ -56,7 +56,7 @@ graficos <- list(
   list(id="35", arquivo="35_casos_importados_mensal.png", titulo="Casos importados de outros municípios — comparação mensal"),
   list(id="36", arquivo="36_laminas_positivas_busca_ativa_passiva_v2.png", titulo="Proporção de lâminas positivas por busca — 2 anos"),
   list(id="37", arquivo="37_municipios_importadores_especie_mensal.png", titulo="Municípios importadores por mês e espécie"),
-  list(id="38", arquivo="38_positividade_falciparum_area_especial.png", titulo="Positividade de P. falciparum por área especial")
+  list(id="38", arquivo="38_positividade_falciparum_area_especial.png", titulo="Casos positivos de P. falciparum por área especial")
 )
 
 grafico_por_id <- function(id) {
