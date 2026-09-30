@@ -117,11 +117,14 @@ pf_atual <- valor_seguro(linha_atual$FALCIPARUM)
 pv_atual <- valor_seguro(linha_atual$VIVAX)
 
 importados_atual <- 0
+
 if (!is.null(dados_dashboard$importados_mensal_comp)) {
   imp <- dados_dashboard$importados_mensal_comp
-  if (ano_atual %in% imp$ANO_RECENTE) {
-    importados_atual <- sum(imp$CASOS_RECENTE, na.rm = TRUE)
-  }
+
+  importados_atual <- sum(
+    imp$ANO_RECENTE,
+    na.rm = TRUE
+  )
 }
 
 meses_rotulo <- c("JAN","FEV","MAR","ABR","MAI","JUN","JUL","AGO","SET","OUT","NOV","DEZ")
