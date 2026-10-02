@@ -438,7 +438,7 @@ ui <- fluidPage(
     uiOutput("tabela_comparacao"),
     p(
       class = "nota-tabela",
-      "P. falciparum e P. vivax incluem infecções mistas nas respectivas linhas; o Total conta casos positivos únicos. A coluna percentual mostra a diferença na quantidade em relação ao ano anterior."
+      "P. falciparum, P. vivax e infecção mista são categorias mutuamente exclusivas. O Total conta casos positivos únicos. A coluna percentual mostra a diferença na quantidade em relação ao ano anterior."
     )
   ),
 
